@@ -1,0 +1,21 @@
+-- Passo 1
+-- Essa parte é opcional
+-- Criação dos usuarios.
+-- 1º DBA
+-- 2º USER NORMAL
+-- 3º USER APENAS LEITURA
+-- 4º APENAS PARA BACKUP
+
+/*
+CREATE USER 'admin1'@'localhost' IDENTIFIED BY 'megazord';
+GRANT ALL PRIVILEGES ON *.* TO 'admin1'@'localhost' WITH GRANT OPTION;
+
+CREATE USER 'user1'@'localhost' IDENTIFIED BY 'user1';
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE TEMPORARY TABLES,EXECUTE ON *.* TO 'user1'@'localhost';
+
+CREATE USER 'read1'@'localhost' IDENTIFIED BY 'read1';
+GRANT SELECT,EXECUTE ON *.* TO 'read1'@'localhost';
+
+CREATE USER 'back1'@'localhost' IDENTIFIED BY 'back1';
+GRANT SELECT,REALOAD,LOCK TABLES,REPLICATION CLIENT ON *.* TO 'back1'@'localhost';
+*/
